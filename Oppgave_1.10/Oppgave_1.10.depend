@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1547127203 source:/home/jonas/ELI1500/Oppgave_1.10/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
