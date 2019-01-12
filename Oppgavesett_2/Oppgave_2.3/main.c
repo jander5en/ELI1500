@@ -1,12 +1,28 @@
+/*Oppgave 2.3
+    Studentene i en annen klasse har 5 delprøver i løpet av året. Hver prøve gir en poengsum i området 0-100. Gjennomsnittet av poengsummene vil også være et tall mellom 0 og 100. Bokstavkarakterer gis utfra følgende tabell:
+
+      0-39% gir F
+     40-49% gir E 
+     50-59% gir D
+     60-79% gir C
+     80-89% gir B
+    90-100% gir A
+
+Lag et program som leser inn poengsummen for hver enkelt prøve for en student.
+
+Programmet skal skrive ut gjennomsnittet samt bokstavkarakter.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 //En litt lat løsning på denne... Gjør om hvis det blir en anledning
 int main()
 {
-	int a, b, c, d, e, f, sum, input, antall;
+	int a, sum, input, antall;
 	sum = input = antall = 0;
 
 	printf("legg inn karakterene til prøvene:");
+	//legger resultatet for hver input til sum og skriver ut karakteren
 	for(antall = 1;antall <= 5; ++antall){
 		printf("\npoengsum for prøve nr. %d: ", antall);	
 		scanf("%d", &input);
@@ -26,6 +42,7 @@ int main()
 		if(input >= 90 && input <= 100)
 			printf("\nPrøve nr. %d har karakter A", antall);
 	}
+	//Gjennomsnittet:
 	a = (sum/5);	
     printf("\n\nGjennomsnittet er: %d \n", a);
     return 0;

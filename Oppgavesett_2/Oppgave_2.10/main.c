@@ -1,7 +1,18 @@
+/*Oppgave 2.10
+Lag et program som
+
+    leser inn en bokstav
+    sjekker om bokstaven er en vokal og
+            skriver ut bokstaven og  er en vokal dersom bokstaven er en vokal
+            skriver ut bokstaven og  er ikke en vokal dersom bokstaven ikke er en vokal
+
+Bruk en switch setning. Test programmet ved å lese inn for eksempel tre bokstaver og skriv ut for hver innlesing. Du kan bruke funksjonen getchar() til innlesingen, eller scanf(«%c»,…) 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
-//Hvordan bruke æøå osv med dette?
+//Hvordan bruke æøå osv med dette? utf-8 eller noe?
 
 int main()
 {
@@ -9,12 +20,16 @@ int main()
 	int check;
 	
 	printf("Skriv inn en bokstav: ");
+	//Forskjellige måter å ta input
 	scanf("%c", &input);
 	//input = getchar();
 	//input = fgetc(stdin);
 	//check = (int)input;
 	//printf("%d\n", check);
 	//printf("%c\n", input);
+
+	//switch for å teste definerte tilfeller av input. gir case for hver vokal,
+	//eller ikke vokal
 	switch(input){
 		case 'a':
 			printf("%c er en vokal", input);
@@ -52,7 +67,7 @@ int main()
 		case 'Y':
 			printf("%c er en vokal", input);
 			break;
-			/* Tar ut disse da jeg ikke får til å lese disse enda..
+			/* Tar ut disse da jeg ikke får til å lese disse..
 		case 'æ':
 			printf("%c er en vokal", input);
 			break;
@@ -73,7 +88,7 @@ int main()
 			break;
 			*/
 		default:
-			printf("%c er ikke en vokal\n", input);
+			printf("%c er ikke en vokal, evt ikke en ascii bokstav\n", input);
 			break;
 		}
     return 0;
