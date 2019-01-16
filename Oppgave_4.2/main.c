@@ -10,7 +10,7 @@ I denne oppgaven skal største og minste verdi i et array finnes.
 
 int main()
 {
-	float x[6] = {1.0, 23.0, 5.0, 4.7, 8.4, 9.0};
+	float x[6] = {7.0, 23.0, 5.0, 4.7, 8.4, 9.0};
 	float max, min;
 	int i;
 	

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1547644546 source:/home/jonas/ELI1500/Oppgave_4.3/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
