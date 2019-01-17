@@ -8,7 +8,7 @@ Lag et program der en løkke skriver ut fakultetet n!n!n! for verdier av nnn fra
 int main()
 {
 	int i, j;
-	double produkt;
+	long double produkt;
 	produkt = 1.0;
 
     printf("Fakultetet for tallene 1! til 50!\n");
@@ -18,7 +18,7 @@ int main()
 		for(j = 1;j <= i;j++)
 			produkt = produkt * (double)j;
 		//skriver ut og resetter
-		printf("\n%d! = %.0lf", i, produkt);
+		printf("\n%d! = %.4Le", i, produkt);
 		produkt = 1.0;
 	}
     return 0;
