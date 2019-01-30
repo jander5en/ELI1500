@@ -1,0 +1,74 @@
+/*Oppgave 5.3
+Logiske "bitvise" operasjoner.
+
+I denne oppgaven skal de logiske operasjonene AND, OR og XOR testes.
+
+På norske:OG, ELLER, og EKSLUSIV ELLER
+
+Lag et program som leser inn to heltall xog y. Skriv ut de resultat av de oppgitte operasjonene brukt på de to tallene.
+
+I testfasen kan det være lurt å la x og yvære små.
+
+Sjekk at programmet kan gi resultatet under.
+
+x = 3, y = 5
+
+  3 AND 5 gir 1 
+  3 OR  5 gir 7
+  3 XOR 5 gir 6
+
+Kan du forklare resultatet?
+
+Hint:
+
+ 3 -> 011 
+
+ 5 -> 101
+
+ 011 AND 101 -> 001
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int i, x, y;
+	x = 4;
+	y = 3;
+
+	unsigned int maske = 1;
+	unsigned int tall = 14;
+	printf("%d\n", maske);
+
+//	printf("\nTallet %d binært er\n\n",tall);
+//	printf("%d\n",maske&tall);	
+	maske = maske << 7;
+	printf("%d\n",maske);
+	for(i = 7;i >= 0;i--){
+		if((maske&tall)>0)
+			printf("%c", '1');
+		else
+			printf("%c",'0');
+		maske = maske >> 1;
+	}
+
+
+
+    printf("\n");
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
