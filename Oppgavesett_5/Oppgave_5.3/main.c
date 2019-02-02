@@ -33,26 +33,20 @@ Hint:
 
 int main()
 {
-	int i;
-	unsigned int result, x, y;
-	x = 1;
-	y = 3;
+	unsigned int x, y;
+	x = 0;
+	y = 0;
 
-    printf("%d\n",(x << 0));
-    printf("%d\n",(x << 1));
-    printf("%d\n",(x << 2));
-    printf("%d\n",(x << 3));
-    printf("%d\n",(y << 0));
-    printf("%d\n",(y << 1));
-    printf("%d\n",(y << 2));
-    printf("%d\n",(y << 3));
-	for(i = 3;i >= 0;i--){
-		if(x>0)
-			printf("1");
-		else
-			printf("0");
-	}
-    printf("\n");
+
+	printf("Legg inn to positive verdier for å få resultatet av bitoperasjonene and or og xor:\n");
+
+	scanf("%d %d",&x, &y);
+	//Output her er de logiske operasjonene gjort på tallene ved å sammenlikne
+	//bitene enkeltvis med hverandre.
+    printf("%d AND %d gir %d\n", x, y, (y & x));
+    printf("%d OR %d gir %d\n", x, y, (y | x));
+    printf("%d XOR %d gir %d\n", x, y, (y ^ x));
+
     return 0;
 }
 
