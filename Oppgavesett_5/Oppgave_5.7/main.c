@@ -32,20 +32,13 @@ Hva skal stå på de stedene i programmet som er marker med "?". Det vil si: ers
 
 #include <stdio.h>
 #include <stdlib.h>
-
+//Skulle vel egentlig brukt binær et eller annet.. Revider hvis tid/lyst 
 int main()
 {
-	int i, j, maske=1, x=1;
-	for(i = 10;i >= 0;i--){
-		if(maske&(1 << i))
-			printf("1");
-		else
-			printf("0");
-		printf("%d ",maske);
-		maske = x << i;	
-		printf("%d ",maske);
-		
-	//	printf("%d ", maske);
+	int j, x=1, mask = 1;
+	for(j = 0;j < 10;j++){
+		printf("%010d\n", x*(mask));
+		mask = mask*10;
 	}
 	return 0;
 }

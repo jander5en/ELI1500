@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1549651166 source:/home/jonas/ELI1500/Oppgavesett_5/Oppgave_5.8/main.c
+	<stdio.h>
+	<stdlib.h>
+
