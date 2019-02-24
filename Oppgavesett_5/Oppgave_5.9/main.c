@@ -20,8 +20,44 @@ Forslag:
 #include <stdio.h>
 #include <stdlib.h>
 
+int bitmonster(unsigned int tall, unsigned int monster);
+//brukte eksempelet til Ola. Lag noe mer ut av dette senere hvis tid.
 int main()
 {
-    printf("\n");
+	unsigned int tall; //målet for letingen
+	unsigned int bitmonstr; //mønsteret i 3 bit (0-7)
+
+	//bitoperasjoner lissom....
+    printf("\nLes inn tallet som skal sjekkes");
+	scanf("%i", &tall);
+	printf("Les inn en tre bits sekvens (0-7)\n");
+	scanf("%i", &bitmonstr);
+
+	if (bitmonster(tall,bitmonstr) == 1)
+		printf("\n bitsekvens %d finnes i %x\n", bitmonstr, tall);
+	else
+		printf("\n bitsekvens %d finnes ikke i %x\n", bitmonstr, tall);
     return 0;
+}
+
+
+int bitmonster(unsigned int tall, unsigned int monster){
+	unsigned int maske = 7;
+	int treff = 0;
+	int i;
+
+	if (monster > 7)
+		printf("\nFeil tall. Bruk mellom 0 til 7");
+	else
+		for (int i = 0;i < 30;i++){
+			printf("debug: %d %d %d %d | ",tall&maske,tall, monster,maske);
+			if((tall&maske) == monster){
+				printf("h34");
+				treff = 1;
+				break;
+			}
+			else // bitshift til høyre
+				tall = tall >> 1;
+		}
+	return treff;
 }
