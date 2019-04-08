@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1554570582 source:/home/jonas/ELI1500/Oppgavesett_8/8.3_debug/jjl/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
