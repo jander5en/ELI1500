@@ -1,0 +1,9 @@
+Dette er er tekst og den er flere linjer lang
+og hver linje avsluttes med
+linjeskift og
+det er alle forekomster av stavelsen er vi skal lete etter.
+Vi leter etter ordet spion denne gangen
+og eksempelet vart er
+Pakken Espionage Deluxe inneholder alt innen kontorspionasje
+og dette ble en gange dum tekst.
+tekst om spioner som spionerer paa andre spioner

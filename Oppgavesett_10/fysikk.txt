@@ -1,0 +1,8 @@
+Navn: Arne
+Resultater: 42 56 67 88
+Navn: Brian
+Resultater: 51 88 91 92
+Navn: Camilla
+Resultater: 78 82 85 92
+Navn: Dag
+Resultater: 42 31 55 63
